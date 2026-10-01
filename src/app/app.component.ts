@@ -8,5 +8,6 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
 })
 export class App {
+  public app = 'Editor d\'imatges';
   protected readonly title = signal('ioc-angular-editor-imatges-luismiguel-garcia');
 }
