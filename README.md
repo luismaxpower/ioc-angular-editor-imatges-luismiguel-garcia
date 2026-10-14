@@ -1,11 +1,11 @@
 # Nom de l'aplicació 
-Editor d'imatges
+Gamevault
 
 ## Autor/a
 Luis Miguel Garcia
 
 ## Descripció
-L'aplicació és un editor d'imatges amb IA  enfocada sobretot en treure elements de la fotografia i omplir-ne el vuit que hi deixa sense que es noti.
+L'aplicació és una biblioteca de videojocs on hi ha les dades rellevants  per la seva clasificació.
 
 ## Versions utilitzades
 Angular CLI       : 22.1.8
