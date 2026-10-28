@@ -18,8 +18,8 @@ Dependencies: npm install
 Creació projecte: ng new ioc-angular-editor-imatges-luismiguel-garcia --routing=true --style=scss --ssr=false --standalone=true --file-name-style-guide=2016 --skip-git=true --package-manager=npm
 Executar: ng serve
 
-## Estat de l'EAC1
+## Estat de l'EAC2
 Completat
 
 ## Enllaç del repositori
-https://github.com/luismaxpower/ioc-angular-editor-imatges-luismiguel-garcia/tree/ra1-setup
+https://github.com/luismaxpower/ioc-angular-editor-imatges-luismiguel-garcia/tree/ra2-components

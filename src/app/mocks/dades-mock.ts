@@ -5,8 +5,8 @@ export const JOCS_MOCK: Element[] = [
     titol: "Final Fantasy VII",
     categoria: "RPG",
     plataforma: "Multiplataforma",
-    dataLlançament: "1997-01-31",
-    disponible: true,
+    dataSortida: "1997-01-31",
+    disponible: false,
     valoraciometacritic: 92
   },
   {
@@ -14,7 +14,7 @@ export const JOCS_MOCK: Element[] = [
     titol: "The Witcher 3: Wild Hunt",
     categoria: "RPG",
     plataforma: "Multiplataforma",
-    dataLlançament: "2015-05-19",
+    dataSortida: "2015-05-19",
     disponible: true,
     valoraciometacritic: 93
   },
@@ -23,7 +23,7 @@ export const JOCS_MOCK: Element[] = [
     titol: "Grand Theft Auto: Vice City",
     categoria: "Openworld",
     plataforma: "Multiplataforma",
-    dataLlançament: "2002-10-27",
+    dataSortida: "2002-10-27",
     disponible: true,
     valoraciometacritic: 94
   },
@@ -32,8 +32,8 @@ export const JOCS_MOCK: Element[] = [
     titol: "Valheim",
     categoria: "Sandbox",
     plataforma: "PC / Xbox",
-    dataLlançament: "2021-02-02",
-    disponible: false,
+    dataSortida: "2021-02-02",
+    disponible: true,
     valoraciometacritic: 87
   },
   {
@@ -41,7 +41,7 @@ export const JOCS_MOCK: Element[] = [
     titol: "Fallout 4",
     categoria: "RPG",
     plataforma: "Multiplataforma",
-    dataLlançament: "2015-11-10",
+    dataSortida: "2015-11-10",
     disponible: true,
     valoraciometacritic: 84
   },
@@ -50,7 +50,7 @@ export const JOCS_MOCK: Element[] = [
     titol: "Fallout 76",
     categoria: "RPG",
     plataforma: "Multiplataforma",
-    dataLlançament: "2018-11-14",
+    dataSortida: "2018-11-14",
     disponible: false,
     valoraciometacritic: 52
   },
@@ -59,7 +59,7 @@ export const JOCS_MOCK: Element[] = [
     titol: "God of War (PS4)",
     categoria: "Acció",
     plataforma: "PlayStation 4",
-    dataLlançament: "2018-04-20",
+    dataSortida: "2018-04-20",
     disponible: true,
     valoraciometacritic: 94
   },
@@ -68,7 +68,7 @@ export const JOCS_MOCK: Element[] = [
     titol: "The Last of Us",
     categoria: "Aventura",
     plataforma: "PlayStation",
-    dataLlançament: "2013-06-14",
+    dataSortida: "2013-06-14",
     disponible: true,
     valoraciometacritic: 95
   },
@@ -77,8 +77,8 @@ export const JOCS_MOCK: Element[] = [
     titol: "Wartales",
     categoria: "Estrategia",
     plataforma: "PC / Nintendo Switch / Xbox",
-    dataLlançament: "2023-04-12",
-    disponible: false,
+    dataSortida: "2023-04-12",
+    disponible: true,
     valoraciometacritic: 80
   },
   {
@@ -86,7 +86,7 @@ export const JOCS_MOCK: Element[] = [
     titol: "Punch Club",
     categoria: "Estrategia",
     plataforma: "Multiplataforma",
-    dataLlançament: "2016-01-08",
+    dataSortida: "2016-01-08",
     disponible: true,
     valoraciometacritic: 70
   },
@@ -95,7 +95,7 @@ export const JOCS_MOCK: Element[] = [
     titol: "Baldur's Gate 3",
     categoria: "RPG",
     plataforma: "Multiplataforma",
-    dataLlançament: "2023-08-03",
+    dataSortida: "2023-08-03",
     disponible: false,
     valoraciometacritic: 96
   },
@@ -104,8 +104,8 @@ export const JOCS_MOCK: Element[] = [
     titol: "Sea of Thieves",
     categoria: "Openworld",
     plataforma: "PC / Xbox / PlayStation 5",
-    dataLlançament: "2018-03-20",
-    disponible: false,
+    dataSortida: "2018-03-20",
+    disponible: true,
     valoraciometacritic: 69
   },
   {
@@ -113,7 +113,7 @@ export const JOCS_MOCK: Element[] = [
     titol: "Days Gone",
     categoria: "Openworld",
     plataforma: "PlayStation 4 / PC",
-    dataLlançament: "2019-04-26",
+    dataSortida: "2019-04-26",
     disponible: true,
     valoraciometacritic: 71
   },
@@ -122,8 +122,8 @@ export const JOCS_MOCK: Element[] = [
     titol: "Deep Rock Galactic",
     categoria: "Shooter",
     plataforma: "Multiplataforma",
-    dataLlançament: "2020-05-13",
-    disponible: false,
+    dataSortida: "2020-05-13",
+    disponible: true,
     valoraciometacritic: 85
   },
   {
@@ -131,8 +131,8 @@ export const JOCS_MOCK: Element[] = [
     titol: "Kingdom Come: Deliverance II",
     categoria: "RPG",
     plataforma: "PC / PS5 / Xbox Series X|S",
-    dataLlançament: "2025-02-04",
-    disponible: false,
+    dataSortida: "2025-02-04",
+    disponible: true,
     valoraciometacritic: 88
   },
   {
@@ -140,8 +140,8 @@ export const JOCS_MOCK: Element[] = [
     titol: "Hard West 2",
     categoria: "Estrategia",
     plataforma: "PC",
-    dataLlançament: "2022-08-04",
-    disponible: false,
+    dataSortida: "2022-08-04",
+    disponible: true,
     valoraciometacritic: 76
   }
 ];

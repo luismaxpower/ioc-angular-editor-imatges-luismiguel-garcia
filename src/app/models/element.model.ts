@@ -5,7 +5,7 @@ export interface Element {
     titol: string;
     categoria: GenereJoc;
     plataforma: string;
-    dataLlançament: string;
+    dataSortida: string;
     disponible: boolean;
     valoraciometacritic: number;
 }

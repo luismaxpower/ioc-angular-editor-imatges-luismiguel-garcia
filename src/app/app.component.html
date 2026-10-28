@@ -1,26 +1,45 @@
-<main class="container">
-  <section class="content">
-    <h1>{{ app }}</h1>
+<!-- enllaç de salt-->
+<a href="#main-content" class="skip-link visually-hidden-focusable">Anar a la part principal</a>
 
-    <p>
-      Alumne: Luis Miguel Garcia per al modul DA2_0A01.
-      L'aplicació és un editor d'imatges amb IA  enfocada sobretot en treure elements de la fotografia i omplir-ne el vuit que hi deixa sense que es noti.
-    </p>
+<main id="main-content" class="container py-4">
+  <header class="mb-4 text-center">
+    <h1>{{ title() }}</h1>
+    <p class="text-muted">{{ app }}</p>
+    <p class="small text-secondary">Data de execució: {{ dataActual | date:'dd/MM/yyyy HH:mm' }}</p>
+  </header>
 
-    <section  class="project-card">
-      <h2>Dades del projecte</h2>
-        <p>Projecte: IOC Angular Editor d'Imatges</p>
-        <p>Framework: Angular</p>
-        <p>Estils: SCSS</p>
-        <p>Arquitectura: Standalone</p>
-        <p>Projecte base llest</p>
-    </section>
+  <!-- barra de filtres -->
+  <section class="mb-4">
+    <app-barra-filtres (filtrar)="onFiltrar($event)"></app-barra-filtres>
   </section>
 
-  <aside class = "note">
-    <p>Nota: Aquest projecte servirà com a base per desenvolupar la app editor d'imatges.</p>
-  </aside>
+  <!-- comptador de resultats -->
+<div class="mb-3" aria-live="polite" role="status">
+  <p class="text-muted">Resultats trobats: <strong>{{ juegosFiltrados().length }}</strong></p>
+</div>
 
-</main>
-<p>Canvi en calent</p>
-<router-outlet />
+  <!--llista elements-->
+  <section class="mb-4">
+    <app-llista-elements 
+      [elements]="juegosFiltrados()" 
+      (seleccionar)="onSeleccionarJuego($event)">
+    </app-llista-elements>
+  </section>
+
+  <!-- panell de detall de l'element seleccionat -->
+  @if (jocSeleccionat) {
+    <div class="card p-4 mt-4 border-primary bg-light shadow">
+      <div class="d-flex justify-content-between align-items-start">
+        <h3 class="text-primary fw-bold">Detall del Joc: {{ jocSeleccionat.titol }}</h3>
+        <button class="btn btn-sm btn-outline-danger" (click)="jocSeleccionat = null">Tancar</button>
+      </div>
+      <hr>
+      <p><strong>Categoria:</strong> {{ jocSeleccionat.categoria }}</p>
+      <p><strong>Plataforma:</strong> {{ jocSeleccionat.plataforma }}</p>
+      <p><strong>Data de sortida:</strong> {{ jocSeleccionat.dataSortida }}</p>
+      <p><strong>Puntuació Metacritic:</strong> {{ jocSeleccionat.valoraciometacritic }}</p>
+      <p><strong>Disponibilitat:</strong> {{ jocSeleccionat.disponible ? 'Disponible al catàleg' : 'No disponible' }}</p>
+    </div>
+  }
+  </main>
+  <router-outlet></router-outlet>
